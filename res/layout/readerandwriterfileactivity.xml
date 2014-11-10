@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please enter text"
+        android:inputType="textMultiLine"
+        android:minLines="4" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnWriterFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到系统" />
+
+    <Button
+        android:id="@+id/btnReaderFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取文件从系统" />
+
+    <Button
+        android:id="@+id/btnWriterSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到SD卡" />
+
+    <Button
+        android:id="@+id/btnReaderSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取文件从SD卡" />
+
+    <Button
+        android:id="@+id/btnWriterSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存文件到Share_Preference" />
+
+    <Button
+        android:id="@+id/btnReaderSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取文件从Share_Preference" />
+
+</LinearLayout>

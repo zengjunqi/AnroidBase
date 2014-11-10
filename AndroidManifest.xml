@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zengyan.androidbase"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.zengyan.androidbase" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.zengyan.androidbase.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.CallPhoneAndSendMsg"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.ReaderAndWriterFile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.XmlParserAct"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.GetSDInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.Sqlite"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.zengyan.androidbase.SqliteUpdate"
+            android:label="@string/app_name" >
+        </activity>
+
+        <provider
+            android:name="com.zengyan.androidbase.provider.MyContactProvider"
+            android:authorities="com.zengyan.androidbase.provider.MyContactProvider" >
+        </provider>
+    </application>
+
+</manifest>
