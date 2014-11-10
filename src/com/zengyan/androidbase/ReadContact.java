@@ -5,10 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.Image;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.util.Log;
@@ -36,7 +39,7 @@ public class ReadContact extends Activity {
 
 		setContentView(R.layout.sqliteactivity);
 		lv = (ListView) findViewById(R.id.lvsqlite);
-
+	
 		List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 		for (int i = 0; i < 10; i++) {
 			Map<String, String> map = new HashMap<String, String>();
