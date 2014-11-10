@@ -27,7 +27,7 @@ public class CallPhoneAndSendMsg extends Activity implements OnClickListener {
 		phoneno = (EditText) findViewById(R.id.txtPhoneno);
 		phonemsg = (EditText) findViewById(R.id.txtMsg);
 		btnCall.setOnClickListener(this);
-		btnSend.setOnClickListener(this);;
+		btnSend.setOnClickListener(this);
 		
 
 

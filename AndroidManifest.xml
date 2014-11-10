@@ -62,6 +62,17 @@
             android:name="com.zengyan.androidbase.provider.MyContactProvider"
             android:authorities="com.zengyan.androidbase.provider.MyContactProvider" >
         </provider>
+        
+        <receiver 
+            android:name="com.zengyan.androidbase.MyBroadcastReceiver"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                 <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                 <data android:scheme="file"></data>
+            </intent-filter>
+            
+        </receiver>
     </application>
 
 </manifest>
