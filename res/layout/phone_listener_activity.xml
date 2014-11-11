@@ -4,14 +4,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   		 android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+         android:ellipsize="marquee"
+         android:marqueeRepeatLimit="marquee_forever"
+        android:text="一、采用start的方式开启服务 ,生命周期如下： onStart()过时了开启服务：  onCreate()--> onStartCommand()  ---> onDestory();如果服务已经开启，不会重复的执行onCreate()， 而是会调用onStart()和 onStartCommand();服务停止的时候 onDestory().服务只会被停止一次.一旦服务开启跟调用者(开启者)就没有任何关系了。
+开启者退出了，开启者挂了，服务还在后台长期的运行。
+开启者没有办法去调用服务里面的方法。" />
+
     <Button
         android:id="@+id/btnStartPLisener"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="开始监听" />
- <Button
+
+    <Button
         android:id="@+id/btnStopPLisener"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="结束监听" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二、服务还有一种开启方式，绑定的方式开启服务。
+onCreate() --->onBind();--->onunbind()-->onDestory();
+绑定服务不会调用onstart或者onstartcommand方法；
+bind的方式开启服务，绑定服务，调用者挂了，服务也会跟着挂掉。不求同时生，但求同时死。
+开启者可以调用服务里面的方法" />
+
+    <Button
+        android:id="@+id/btnStartBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定服务" />
+
+    <Button
+        android:id="@+id/btnStopBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解绑服务" />
+
+    <Button
+        android:id="@+id/btnCallBSMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用绑定服务里的方法" />
+
 </LinearLayout>

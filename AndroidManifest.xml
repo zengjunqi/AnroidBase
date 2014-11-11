@@ -87,6 +87,8 @@
 
         <service android:name="com.zengyan.androidbase.services.MyPhoneListenerService" >
         </service>
+         <service android:name="com.zengyan.androidbase.services.BindService" >
+        </service>
     </application>
 
 </manifest>
