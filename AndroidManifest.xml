@@ -111,6 +111,14 @@
             android:name="com.zengyan.androidbase.MediaPlayerPlayVideo"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.zengyan.androidbase.DialogFactory"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.zengyan.androidbase.Nitification"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

@@ -14,11 +14,13 @@ public class MainActivity extends Activity {
 	private ListView lv;
 	private String[] items = { "CallPhoneAndSendMsg", "ReaderAndWriterFile",
 			"XmlParserAct", "GetSDInfo", "Sqlite", "PhoneListener",
-			"ImageProcess", "SiYiFu" ,"MediaPlayer Play Muisc","MediaPlayer Play Network Music","MediaPlayer Play Video"};
+			"ImageProcess", "SiYiFu" ,"MediaPlayer Play Muisc","MediaPlayer Play Network Music","MediaPlayer Play Video",
+			"Dialog","Notification"};
 	private Class[] cc = { CallPhoneAndSendMsg.class,
 			ReaderAndWriterFile.class, XmlParserAct.class, GetSDInfo.class,
 			Sqlite.class, PhoneListener.class, ImageProcess.class, SiYiFu.class,
-			MediaPlayerPlaySDMusic.class,MediaPlayerPlayNetworkMusic.class,MediaPlayerPlayVideo.class};
+			MediaPlayerPlaySDMusic.class,MediaPlayerPlayNetworkMusic.class,MediaPlayerPlayVideo.class,
+			DialogFactory.class,Nitification.class};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
