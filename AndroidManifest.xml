@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -89,6 +90,27 @@
         </service>
          <service android:name="com.zengyan.androidbase.services.BindService" >
         </service>
+        <activity
+            android:name="com.zengyan.androidbase.ImageProcess"
+            android:label="@string/app_name" >
+        </activity>
+                <activity
+            android:name="com.zengyan.androidbase.SiYiFu"
+            android:label="@string/app_name"
+          android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+         <activity
+            android:name="com.zengyan.androidbase.MediaPlayerPlaySDMusic"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.zengyan.androidbase.MediaPlayerPlayNetworkMusic"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.zengyan.androidbase.MediaPlayerPlayVideo"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
