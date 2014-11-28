@@ -1,6 +1,7 @@
 package com.zengyan.androidbase;
 
 import java.io.File;
+import java.util.HashMap;
 
 import android.R.integer;
 import android.app.Activity;
@@ -34,6 +35,8 @@ public class ImageProcess extends Activity {
 
 		setContentView(R.layout.image_process_activity);
 
+	
+		
 		btnLoadImg = (Button) findViewById(R.id.btnLoadImg);
 		ivImageView = (ImageView) findViewById(R.id.iv);
 		iv1 = (ImageView) findViewById(R.id.iv_one);

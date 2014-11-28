@@ -18,9 +18,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
 
     <application
         android:allowBackup="true"
@@ -86,29 +86,32 @@
             android:name="com.zengyan.androidbase.PhoneListener"
             android:label="@string/app_name" >
         </activity>
+        <activity android:name="com.zengyan.androidbase.MyBtnActivity" >
+        </activity>
 
         <service android:name="com.zengyan.androidbase.services.MyPhoneListenerService" >
         </service>
-         <service android:name="com.zengyan.androidbase.services.BindService" >
+        <service android:name="com.zengyan.androidbase.services.BindService" >
         </service>
+
         <activity
             android:name="com.zengyan.androidbase.ImageProcess"
             android:label="@string/app_name" >
         </activity>
-                <activity
+        <activity
             android:name="com.zengyan.androidbase.SiYiFu"
             android:label="@string/app_name"
-          android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
-         <activity
+        <activity
             android:name="com.zengyan.androidbase.MediaPlayerPlaySDMusic"
             android:label="@string/app_name" >
         </activity>
-         <activity
+        <activity
             android:name="com.zengyan.androidbase.MediaPlayerPlayNetworkMusic"
             android:label="@string/app_name" >
         </activity>
-          <activity
+        <activity
             android:name="com.zengyan.androidbase.MediaPlayerPlayVideo"
             android:label="@string/app_name" >
         </activity>
@@ -116,15 +119,15 @@
             android:name="com.zengyan.androidbase.DialogFactory"
             android:label="@string/app_name" >
         </activity>
-         <activity
+        <activity
             android:name="com.zengyan.androidbase.Nitification"
             android:label="@string/app_name" >
         </activity>
-             <activity
+        <activity
             android:name="com.zengyan.androidbase.MyAnimation"
             android:label="@string/app_name" >
         </activity>
-          <activity
+        <activity
             android:name="com.zengyan.androidbase.MySensor"
             android:label="@string/app_name" >
         </activity>

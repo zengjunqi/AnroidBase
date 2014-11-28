@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:zeng="http://schemas.android.com/apk/res/com.zengyan.androidbase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <com.zengyan.androidbase.ui.MyButton
+         android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		zeng:foreDrable="@drawable/slide_button"
+		zeng:backDrable="@drawable/switch_background"
+		zeng:turnon="false"
+        
+        ></com.zengyan.androidbase.ui.MyButton>
+
+</LinearLayout>

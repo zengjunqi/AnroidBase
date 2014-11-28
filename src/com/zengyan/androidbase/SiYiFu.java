@@ -50,9 +50,17 @@ public class SiYiFu extends Activity {
 				case MotionEvent.ACTION_MOVE:
 					int x = (int) event.getX();
 					int y = (int) event.getY();
-
-					for (int i = -20; i < 20; i++) {
-						for (int j = -20; j < 20; j++) {
+					if (x < 0) {
+						x = 10;
+					}
+					if (y < 0) {
+						y = 10;
+					}
+					
+					
+					
+					for (int i = -10; i < 10; i++) {
+						for (int j = -10; j < 10; j++) {
 
 							try {
 								alterBitmap.setPixel(x + i, y + j,

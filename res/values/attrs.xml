@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyBtn">
+        <attr name="foreDrable" format="reference"></attr>
+        <attr name="backDrable" format="reference"></attr>
+        <attr name="turnon" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

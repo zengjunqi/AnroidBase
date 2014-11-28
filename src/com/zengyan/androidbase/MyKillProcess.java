@@ -29,6 +29,14 @@ public class MyKillProcess extends Activity {
 				// TODO Auto-generated method stub
 				am.killBackgroundProcesses(etpackage.getText().toString());//能杀死空进程和后台进程
 				Toast.makeText(MyKillProcess.this, "杀死成功", 1000).show();
+				
+				
+				//开启手机的安装程序Activity
+				/*Intent intent = new Intent();
+				intent.setAction("android.intent.action.VIEW");
+				intent.addCategory("android.intent.category.DEFAULT");
+				intent.setDataAndType(Uri.fromFile(new File(path)), "application/vnd.android.package-archive");
+				startActivity(intent);*/
 			}
 		});
 
